@@ -1,0 +1,318 @@
+/* makes nav bar scroll smoth. */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Centers the hotel logo and name at the top of the page. */
+#lg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     padding: 20px;
+    gap: 14px;
+    background: rgba(255, 252, 246, 0.96);
+}
+
+#h1 {
+    margin: -10px;
+    color: #2d2922;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+/* Keeps the navigation visible near the top while the user scrolls. */
+#header {
+    margin: 1px;
+    position: sticky;
+    top: 0;
+    background-color: #25221d;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+.nav a {
+    color: #f7f1e5;
+  text-decoration: none;
+    padding: 20px ;
+    border-bottom: 5px solid transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+}
+
+.nav a:hover {
+    color: #f3ecdc;
+    border-bottom-color: #f3f0ea;
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+/* Creates the large welcome area with a background hotel image. */
+#Home {
+    background-image: linear-gradient(rgba(27,27,26,0.58), rgba(27,27,26,0.58)),   url(bb.jpg);
+    background-size: cover;
+    background-position: center;
+   background-attachment: fixed;
+
+    padding: 30px;
+  border-radius: 10px;
+  height: 200px;
+  color: white;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+
+}
+
+#bb{
+    padding: 5px;
+
+}
+
+
+/* Gives the room listings their background, spacing, and overall height. */
+#Rooms{
+    background: rgb(199, 198, 198);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    height: 235vh;
+    margin-top: 20px;
+   
+}
+
+/* Places the three room categories beside each other in equal-width columns. */
+.room-layout {
+    display:flex ;
+    gap: 20px;
+    align-items: start;
+}
+
+.room-category {
+    flex: 1 1  0;
+    min-width: 0;
+    text-align: center;
+    gap: 10px;
+}
+
+
+/* Displays the room categories in the intended order: Luxury, Double, Single. */
+.single-category {
+    order: 1;
+}
+
+.double-category {
+    order: 2;
+}
+
+.luxury-category {
+    order: 3;
+}
+
+.room-category .rooms {
+    width: 85%;
+    box-sizing: border-box;
+}
+
+/* Makes each room price stand out as a gold label. */
+.price{
+    font-weight: bold;
+    color:#d4a017;
+    background-color: rgb(233, 232, 232);
+    margin: 40px;
+    border-radius: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+
+
+/* Limits the form width and gives it a light panel background. */
+#form{
+    max-width: 500px;
+    margin: auto;
+    background: rgb(187, 186, 186);
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+
+/* Styles the full booking section behind the form. */
+#Booking{
+    background-color: #e8e1d5;
+    text-align: center;
+    word-spacing: 10px;
+}
+
+/* Gives text fields and room menus consistent size and spacing. */
+input,select{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border: 1px solid #f7cece;
+    border-radius: 5px;
+}
+
+/* Styles the message shown after a booking is submitted. */
+#result {
+    margin: 40px;
+    padding: 20px;
+    border: 1px solid #5a4101;
+    border-radius: 8px;
+    background-color: #fffaf0;
+    color: #257903;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.7;
+}
+
+
+/* Styles the bottom copyright area. */
+#footer{
+    margin-top: 10px;
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Places the About and Contact blocks next to each other. */
+.About-contact{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    background: #302f2f;
+    color: rgb(243, 243, 242);
+    padding: 10%;
+    border-radius: 30px;
+}
+.About-contact h2{
+    color: #d4a017;
+}
+
+
+/* Styles the hotel description block. */
+#about{
+    width: 50%;
+    background-color: #292929;
+    border-radius: 10px;
+    height: 30vh;
+    text-align: center;
+}
+
+
+
+/* Styles the hotel contact details block. */
+#contact{
+    width: 50%;
+    background-color: #292929;
+    border-radius: 10px;
+    height: 30vh;
+    text-align: center;
+}
+
+
+
+/* Gives the logo and room pictures consistent dimensions and borders. */
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    margin: 5px;
+    padding: 10px;
+     border: #111 solid 1px;
+}
+
+.rooms{
+    background-color: #f1efef;
+    width: 30%;
+    text-align: center;
+    border-radius: 30px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+/* Adjusts the layout for phones and other narrow screens. */
+@media (max-width: 768px) {
+    #h1 {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+    }
+
+    #header {
+        padding: 12px ;
+    }
+
+    .nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    .nav a {
+        padding: 10px 12px;
+    }
+
+    #Home {
+        height: auto;
+        min-height: 240px;
+        padding: 45px 18px;
+        background-attachment: scroll;
+    }
+
+    #Rooms {
+        height: auto;
+        padding: 24px 18px;
+    }
+
+    .room-layout {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .room-category,
+    .room-category .rooms,
+    .rooms {
+        width: 100%;
+    }
+
+    .price {
+        margin: 20px;
+        padding: 12px;
+    }
+
+    #form {
+        width: 100%;
+        padding: 20px 14px;
+    }
+
+    .About-contact {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 14px;
+        border-radius: 10px;
+    }
+
+    #about,
+    #contact {
+        width: 100%;
+        height: auto;
+        padding: 12px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXURY NEST HOTEL</title>
+    <link rel="stylesheet" href="mok.css">
+   
+</head>
+<body>
+    <div id="lg">
+      <img src="LOGO.jpg" alt="Luxury Nest Hotel logo" style="width: 100px; height: 100px; border-radius: 40px;">
+    <h1 id="h1">
+        LUXURY NEST HOTEL
+    </h1>
+    
+    </div>
+
+    <!-- This header contains the navigation links for moving around the page. -->
+     <header id="header">
+        <div class="nav">
+     <a href="#Home.">Home</a>
+     <a href="#Rooms.">Rooms</a>
+     <a href="#Booking">Booking</a>
+     <a href="#About">About</a>
+        </div>
+    </header>
+
+    <!-- This is a home section . -->
+    <section id="Home">
+  <div>
+   <h2> COMFORT AND LUXURY</h2>
+   <P>
+    Welcome to Luxury Nest Hotel. were comfort meets elegance.
+    Book ur perfect stay with us today.
+   </P>
+    <button id="bb"  value="Rooms">Book Now.</button>
+   </div>
+
+    </section>
+
+
+    <!--  section  Single, Double, and Luxury rooms. -->
+    <section id="Rooms">
+
+      <h2>
+        OUR ROOMS
+      </h2>
+      <!-- Each room category contains a title, description, room pictures, prices, and buttons. -->
+      <div class="room-layout">
+        <!-- These are the rooms intended for one guest. -->
+        <div class="room-category single-category">
+          <h3>Single Rooms</h3>
+          <p>Perfect for one guest.</p>
+          <div class="ALL">
+
+           <!-- Single room 1 -->
+         <div class="rooms">
+         <img src="ss (1).jpg" alt="room 1">
+         <p class="price">
+            UGX 70k/  1 Night.
+          </p>
+          <button type="button" class="room-button" data-room="Single Room 1">ROOM 1.</button>
+          </div> 
+
+          <!-- Single room 2 -->
+         <div class="rooms">
+          <img src="ss (2).jpg" alt="room 2">
+         <p class="price">
+             UGX 140kk/  1 Night.
+          </p>
+          <button type="button" class="room-button" data-room="Single Room 2">ROOM 2.</button>
+          </div> 
+  
+          <!-- Single room 3 -->
+         <div class="rooms">
+            <img src="ss (3).jpg" alt="">
+          <p class="price">
+              UGX 200k/  1 Night.
+          </p>
+          <button type="button" class="room-button" data-room="Single Room 3">ROOM 3.</button>
+          </div> 
+
+          </div>
+        </div>
+
+        <!-- These are the Double Rooms intended for two guests. -->
+        <div class="room-category double-category">
+          <h3>Deluxe Rooms</h3>
+          <p>Comfortable room for two guests.</p>
+          <div class="ALL">
+        <div class="rooms">
+            <img src="dd.jpg" alt="">
+        <p class="price">
+            UGX 300k: 1 Night
+        </p>
+          <button type="button" class="room-button" data-room="Double Room 1">Room 1</button>
+        </div>
+
+
+        <div class="rooms">
+            <img src="dd (2).jpg" alt="">
+
+        <p class="price">
+            UGX 400k: 1 Night
+        </p>
+          <button type="button" class="room-button"  data-room="Double Room 2">Room2</button>
+        </div>
+
+
+        <div class="rooms">
+            <img src="dd (3).jpg" alt="">
+        <p class="price">
+           UGX 500k: 1 Night 
+        </p>
+         <button type="button" class="room-button" data-room="Double Room 3">Room 3</button>
+        </div>
+
+          </div>
+        </div>
+
+        <!--  luxury rooms with the highest price. -->
+        <div class="room-category luxury-category">
+          <h3>Luxury Rooms.</h3>
+          <p>Enjoy a premium luxury experience.</p>
+          <div class="ALL">
+        <div class="rooms">
+            <img src="ex (1).jpg" alt="">
+           <p class="price">
+            1M.
+           </p>
+
+          <button type="button" class="room-button" data-room="Luxury Room 1">Get it now</button>
+        </div>
+
+
+         <div class="rooms">
+            <img src="ex (2).jpg" alt="">
+           <p class="price">
+            1M.
+           </p>
+            <button type="button" class="room-button" data-room="Luxury Room 2">Get it now</button>
+
+        </div>
+
+         <div class="rooms">
+            <img src="ex (3).jpg" alt="">
+           <p class="price">
+            1M.
+           </p>
+             <button type="button" class="room-button" data-room="Luxury Room 3">Get it now</button>
+
+        </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- This form collects the guest's details, dates, and preferred room. -->
+    <section id="Booking">
+      <h2>Booking Form.</h2>
+
+      <form id="form">
+      <input type="text" id="name" placeholder="Enter Your full Name." required>
+      <input type="text" id="Email" placeholder="Enter Your Email.." required>
+      <input type="text" id="Contact" placeholder="+256">
+
+      
+      <input type="date" id="checkin" placeholder="check-in date" required>
+    
+      <input type="date" id="checkout" placeholder="check-out date" required>
+  
+
+          
+
+        <!--for sing-->
+        <div class="Single">
+        <h3>Single Rooms.</h3>
+      <select class="room-select">
+        <option value="select">select room</option>
+      <option value="Single Room 1">Single Room 1 -</option>
+      <option value="Single Room 2">Single Room 2 -</option>
+       <option value="Single Room 3">Single Room 3 -</option>
+       </select>
+
+      <!-- This menu lets the guest choose one of the Double Rooms. -->
+       <h3>Double.</h3>
+      <select class="room-select">
+         <option value="select">select room</option>
+        <option value="Double Room 1">Double Room 1 -</option>
+         <option value="Double Room 2">Double Room 2 -</option>
+          <option value="Double Room 3">Double Room 3 -</option>
+       </select>
+        </div>
+
+
+         <div class="Single">
+        <h3>Luxury Rooms</h3>
+        
+        
+      <select class="room-select">
+        <option value="select">select room</option>
+        <OPtion value="Luxury Room 1">Room 1</OPtion>
+        <option value="Luxury Room 2"> Room 2</option>
+        <option value="Luxury Room 3">Room 3</option>
+       </select>
+        <button type="submit">CONFIRM BOOKING</button>
+        <p id="result" role="status"></p>
+      </form>
+
+    </section>
+
+    <!-- contact information. -->
+    <section id="About">
+        <div class="About-contact">
+        <div id="about">
+        <h2>About Luxury Nest</h2>
+
+        <p>
+            Luxury Nest Hotel provides a comfortable,peaceful, and elegant environment for our guests.
+        </p>
+        <p>
+            Our goal is to give every visitor an unforgettable stay.
+        </p>
+
+        </div>
+
+       <!--contact-->
+        <div id="contact">
+            <h2>CONTACT US.</h2>
+            <p>PHONE: +256708803000.</p>
+            <p>EMAIL:info@luxurynest.com</p>
+            <p>LOCATION: Jinja:Uganda</p>
+
+
+        </div>
+        </div>
+    </section>
+
+    <section id="footer">
+         <p>
+            @2026 Luxury Nest Hotel All Rights Reserved
+
+         </p>
+
+    </section>
+
+    <script src="JJ.js"></script>
+</body>
+</html>
