@@ -4,6 +4,10 @@ html {
 }
 .Book{
   background-color:grey;
+  text-decoration: none;
+  color:white;
+  padding:30px;
+   border-radius: 30px;
 }
 
 /* Centers the hotel logo and name at the top of the page. */
