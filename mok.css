@@ -2,7 +2,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+.Book{
+  background-color:grey;
+}
 
 /* Centers the hotel logo and name at the top of the page. */
 #lg {
